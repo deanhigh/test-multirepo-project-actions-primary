@@ -11,4 +11,4 @@ jobs:
         uses: deanhigh/sample-action@main
         with:
           repositories: 'deanhigh/test-sample-repo,deanhigh/sample-action'
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.CROSS_REPO_PAT }}
