@@ -6,9 +6,9 @@ jobs:
     runs-on: ubuntu-latest
     name: Sync Milestones 
     steps:
-      - name: Sync Milestones 
-        id: sync-milestones
+      - name: Copy Milestones 
+        id: copy-milestones
         uses: deanhigh/sample-action@main
         with:
-          repositories: 'testrepo'
+          repositories: 'deanhigh/test-sample-repo,deanhigh/sample-action'
           token: ${{ secrets.GITHUB_TOKEN }}
