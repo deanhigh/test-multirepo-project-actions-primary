@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Sync Milestones 
         id: sync-milestones
-        uses: deanhigh/sample-action@v0.0.3
+        uses: deanhigh/sample-action@main
         with:
           repositories: 'testrepo'
           token: ${{ secrets.GITHUB_TOKEN }}
