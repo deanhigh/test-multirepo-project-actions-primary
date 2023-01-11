@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Copy Milestones 
         id: copy-milestones
-        uses: deanhigh/sample-action@main
+        uses: deanhigh/milestone-sync-action@main
         with:
-          repositories: 'deanhigh/test-sample-action,deanhigh/sample-action'
+          repositories: 'deanhigh/milestone-sync-action,deanhigh/sample-action'
           token: ${{ secrets.CROSS_REPO_PAT }}
