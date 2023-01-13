@@ -2,13 +2,13 @@ on:
   workflow_dispatch:
 
 jobs:
-  sync-milestones:
+  push-project-artifacts:
     runs-on: ubuntu-latest
-    name: Sync Milestones 
+    name: Push Project Artifacts 
     steps:
-      - name: Copy Milestones 
-        id: copy-milestones
-        uses: deanhigh/milestone-sync-action@main
+      - name: Push Milestones 
+        id: push-milestones
+        uses: deanhigh/multirepo-project-actions@main
         with:
-          repositories: 'deanhigh/milestone-sync-action,deanhigh/sample-action'
+          repositories: 'deanhigh/test-multirepo-project-actions-sink-a/milestone-push'
           token: ${{ secrets.CROSS_REPO_PAT }}

@@ -1,1 +1,1 @@
-# test-sample-action
+# Multi-repo project actions testing. (source repo)
