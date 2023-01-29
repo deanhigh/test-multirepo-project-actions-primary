@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Push Milestones 
         id: push-milestones
-        uses: deanhigh/multirepo-project-actions/milestone-push@main
+        uses: deanhigh/mr-tools-milestone-push-action@main
         with:
           repositories: 'deanhigh/test-multirepo-project-actions-sink-a'
           token: ${{ secrets.CROSS_REPO_PAT }}
